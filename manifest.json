@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "nico-nowplaying-info",
+  "version": "1.0.0",
+  "description": "ニコ生用再生動画情報を配信画面に出したい時用(chrome拡張)",
+  "content_scripts": [
+      {
+          "matches": [
+              "https://www.nicovideo.jp/watch/*",
+              "https://live2.nicovideo.jp/watch/*"
+          ],
+          "js": [
+              "script.js"
+          ]
+      }
+  ]
+}
